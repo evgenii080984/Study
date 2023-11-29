@@ -3,206 +3,161 @@
 
 <head> 
   <meta charset="UTF-8">
-  <title> О нас </title>
-  <link type="image/svg+xml" rel="icon" href="image/favicon.svg">
-  <link type="image/png" rel="icon" href="image/favicon.png">
+  <title> Структурирование контента в HTML </title>
 </head>
-  
-<body>
-  <header>
-      <h1>Меню</h1>
-    
-      <img src="image/logo.svg" alt="Логотип" width="180" height="80" />
-    <br /> 
-    <hr />
-      <ul>
-        <li><a href="index.html#one">Залы</a></li>
-        <li><a href="index.html#two">О нас</a></li>
-        <li><a href="http://shtilsd8.beget.tech" target="_blank">Бронь</a></li>
-        <li><a href="index.html#tree">Отзывы</a></li>
-        <li><a href="index.html#tree">Контакты</a></li>
-      </ul>
-  </header>
-  <main>
-    <div class="block" id="one">    
-      <div>
-        <h2>У нас есть всё для классного отдыха с друзьями</h2>
-  
-        <ul>
-          <li><img src="image/vr.png" width="380" height="228" alt="VR очки"><br/>VR очки</li>
-          <li><img src="image/audio.png" width="380" height="228" alt="Аудио-система 5.1"><br/>Аудио-система 5.1 с отличным звуком</li>
-          <li><img src="image/micro.png" width="380" height="228" alt="Женщина с микрофоном"><br/>Караоке(4 микрофона)</li>
-          <li><img src="image/game.png" width="380" height="228" alt="Стол с настольной игрой"><br/>Настольные игры</li>
-          <li><img src="image/netflix.png" width="380" height="228" alt="Монитор с надписью Netflix на экране"><br/>Кино сервисы Netflix, IVI, MegoGO, КиноПоиск,Okko<br></li>
-          <li><img src="image/sony.png" width="380" height="228" alt="Монитор с игрой call of duty"><br/>PlayStation 5</li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="block" id="two">
-      <h3>Наши залы</h3>
-  
-        <form id="My-form"
-              action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <h4>Забронировать зал просто</h4> 
-  
-            <div>
-              <p>Выберите зал</p>
-              <button type="button" name="Select a room" value="80's vibes">80's vibes</button>
-              <button type="button" name="Select a room" value="Star wars">Star wars</button>
-              <button type="button" name="Select a room" value="Wild west">Wild west</button>    
-              <button type="button" name="Select a room" value="Neon style">Neon style</button>   
-            </div>
-  
-          <h4>Собери набор развлечений</h4>
-            <div>
-              <p>Приставка:</p> 
-                <label><input type="radio" value="Play station" name="Prefix" checked>Play station<br></label>
-                <label><input type="radio" value="Sega Mega Drive" name="Prefix">Sega Mega Drive<br></label>
-                <label><input type="radio" value="X-box One S" name="Prefix">X-box One S<br></label>
-                <label><input type="radio" value="Dendy" name="Prefix">Dendy<br></label> 
-            </div>
-  
-            <div>
-              <p>Настольные игры</p> 
-                <label><input type="checkbox" value="Jenga" name="Table games">Jenga<br></label>
-                <label><input type="checkbox" value="Monopoly" name="Table games">Monopoly<br></label>
-                <label><input type="checkbox" value="Mankchin" name="Table games">Манкчин<br></label>
-                <label><input type="checkbox" value="Alias" name="Table games">Alias<br></label>  
-            </div>
-  
-            <div>
-              <p>Дополнительно</p>
-                <label><input type="checkbox" value="Karaoke" name="Additionally">Караоке</label>
-                <label><input type="checkbox" value="VR" name="Additionally">VR</label>
-            </div>
-  
-          <h4>Выбери дату и время</h4>
-  
-            <div>
-              <input type="text" name="Data" size="8" list="list_data" placeholder="Дата" pattern="\d{1,2}.\d{1,2}.\d{4}" title="Заполните дату в указанном формате" required>
-                <datalist id="list_data">
-                  <option value="00.00.0000"></option>
-                </datalist>
-              <input type="text" name="Time" size="8" list="list_time" placeholder="Время" pattern="\d{1,2}:\d{1,2}" title="Заполните время в указанном формате" required>
-                <datalist id="list_time">
-                  <option value="00:00"></option>
-                </datalist>
-              <label>Имя
-                <input type="text" required pattern="[A-Za-zА-Яа-яЁё]+$" name="name">
-              </label>
-              <label>Телефон
-                <input type="tel" title="+7-___-___-__-__" name="phone" required pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
-              </label>
-            </div>
-  
-            <br/>
-  
-            <div>
-              <input type="text" name="How many men" size="20" list="How_many_men" placeholder="Сколько человек" pattern="\d{1,2}" title="Укажите количество человек" required>
-                <datalist id="How_many_men">
-                  <option value="1"></option>
-                </datalist>
-              <label>Фамилия
-                <input type="text" required pattern="[A-Za-zА-Яа-яЁё]+$" name="surname">
-              </label>
-              <label>E-mail
-                <input type="email" name="E-mail" required>
-              </label>
-            </div>
-  
-            <br/>
-  
-            <div>
-              <button type="submit" value="Забронировать" form="My-form">Забронировать</button>
-            </div>
-        </form>  
-    </div>
-  
-    <div class="block" id="three">
-      <h4>О нас </h4>
-  
-      <quote class="text-break"> 
-        <p>
-          Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города 
-          Каждый день мы стараемся создавать для Вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками 
-          со всего мира <b>GAME OVER</b>- это место незабываемых впечатлений
-        </p>
-        <cite>
-          <p>
-            <i>Аркадий Абашкин, создатель игровой территории GAME OVER</i>
-          </p>
-        </cite>
-      </quote>
-  
-      <div>
-        <h5>Отзывы посетителей</h5>
-        
-        <figure>
-          <table>
-            <tr>
-              <td>
-                <img src="image/Maks.png" alt="Макс Самойлов" height="150">
-              </td>
-              <td>
-                <p>Отмечали здесь день рождения с компанией друзей, все было очень<br/>
-                круто! VR очки это просто бомба, никогда еще я не был в таком полном<br/>
-                игровом погружении/ Сервис на высоте!
-                </p>
-              </td> 
-            </tr>
-          </table>
-          <figcaption>Макс Самойлов</figcaption>
-        </figure>
-        
-        <figure>
-          <table>
-            <tr>
-              <td>
-                <img src="image/Oksana.png" alt="Оксана Григорьева" height="150">
-              </td>
-              <td>
-                <p>Были в Комнате Дикий Запад, пели в караоке под Шакиру, отличный<br/>
-                получился корпоратив! У нас в городе больше нет подобных заведений
-                </p>
-              </td> 
-            </tr>
-          </table> 
-          <figcaption>Оксана Григорьева</figcaption> 
-        </figure>
-        
-        <figure>
-          <table>
-            <tr>
-              <td>
-                <img src="image/Nikita.png" alt="Никита Ященко" height="150">
-              </td>
-              <td>
-                <p>Немного подвисала игра в VR очках, а так все норм. Крутое<br/>
-                оформление комнаты в стиле звездных войн, попал в атмосферу <br/>
-                космоса
-                </p>
-              </td> 
-            </tr>     
-          </table>
-          <figcaption>Никита Ященко</figcaption> 
-        </figure>
-      </div>
-    </div>    
-  </main>
-  
-  <footer>
-    <h5>Контакты</h5>
 
-    <p>г. Москва ул. Аквамарина, 16 </p>
-    <a href="tel:89509302893">8(950)930-28-93</a>
-    <br/>
-    <a href="mailto:GameOver@gmail.ru">GameOver@gmail.ru</a>
-    <ul>
-      <li><a href="http://vk.com" target="_blank">Vkontakte</a></li>
-      <li><a href="http://web.telegram.org" target="_blank">Telegram</a></li>
-    </ul>
-  </footer>  
+<body>
+
+  <article>
+    <h1>Структурирование контента в HTML: как не перепутать &lt;div&gt;, &lt;section&gt;, &lt;article&gt; и &lt;aside&gt;?</h1>
+      <p>
+        Ещё одна причина любить и уважать HTML5 — его громадный вклад в семантику кода. То есть, код теперь имеет осмысленную и логичную
+          <br/> структуру. Для этого введены специальные теги, которые служат удобным инструментом создания понятной и легко читаемой структуры в коде.
+      </p>
+      <p>
+        Среди прочих стоит выделить теги &lt;section&gt;, &lt;article&gt; и &lt;aside&gt;. Именно они делают блок с контентом более значимым и обособленным, чем
+          <br/> привычный &lt;div&gt;. Часто не до конца ясно, когда использовать эти новые элементы, а когда обычный &lt;div&gt;. Что ж, давайте начнём с обзора
+          <br/> упомянутых элементов, а затем уже поговорим об их применении и комбинировании.
+      </p>
+
+    <section>
+      <h2>Обзор элементов</h2>
+        <section>
+          <h3>&lt;div&gt;</h3>
+            <p>
+              Элемент &lt;div&gt; является, пожалуй, самым универсальным блочным элементом. При этом у него нет полноценного самостоятельного значения — 
+                <br/> он предназначен для группировки контента, который семантически никак не связан между собой. Использовать &lt;div&gt; нужно осторожно — он не 
+                <br/> имеет смысла для скрин ридеров.
+            </p>
+            <p>
+              Настоятельно рекомендуем обращаться к элементу &lt;div&gt; только в крайнем случае, когда больше никакие другие элементы не подходят!
+            </p>
+              <figure>
+                <figcaption>Элемент &lt;div&gt; чаще всего используется как контейнер для других элементов</figcaption>
+                <img src="image/div.jpg" alt="Элемент Div" width="387" height="178"> 
+              </figure>
+        </section>
+
+        <section>
+          <h3>&lt;section&gt;</h3>
+            <p>
+              В отличие от &lt;div&gt;, тег &lt;вsection&gt; применяется к общим разделам контента, который может быть сгруппирован семантически.
+            </p>
+            <p>
+              Главное правило: элемент &lt;section&gt; уместно использовать только тогда, когда его содержимое явно указывается в структуре. Например, в качестве
+                <br/> раздела.
+            </p>
+              <figure>
+                <figcaption>
+                  В силу того, что содержимое тега &lt;section&gt; имеет семантическую общность — «тему» — её необходимо указать с помощью заголовка. Часто
+                  <br/> «тема» указывается сразу после открытия тега:
+                </figcaption>
+                <img src="image/section.jpg" alt="Элемент Section" width="344" height="343"> 
+              </figure>
+        </section>
+
+        <section>
+          <h3>&lt;article&gt;</h3> 
+            <p>
+              Тег &lt;article&gt; ещё более уточняющий и конкретный, чем тег &lt;section&gt;. Он так же применяется к семантически связанному блоку контента и должен
+                <br/> иметь заголовок. Его содержимое должно быть независимым и самодостаточным — это, своего рода, отдельная статья. При изолировании
+                <br/> содержимого тега &lt;article&gt; от остальной части страницы должны сохраняться его смысл и законченность.
+            </p>
+              <figure>
+                <figcaption>
+                  Чаще всего тег &lt;article&gt; применяется к статье на сайте, отдельной новости, посту блога, сообщению форума или комментариям:
+                </figcaption>
+                <img src="image/article.jpg" alt="Элемент Article" width="460" height="143"> 
+              </figure>
+        </section>
+
+        <section>
+          <h3>&lt;aside&gt;</h3>
+            <p>
+              Тег &lt;aside&gt; тоже применяется к блоку для семантического указания раздела. Но у него есть важное отличие от &lt;section&gt; или &lt;article&gt;: он
+                <br/> представляет блок контента, отношение которого к содержимому документа косвенное или вообще отсутствует. Тег &lt;aside&gt; независим (буквально,
+                <br> в стороне) от остального контента. То есть, он может быть вырван из одной страницы и вставлен в другую и при этом не потеряет свою
+                <br> актуальность.
+            </p>
+            <figure>
+              <figcaption>
+                Чаще всего &lt;aside&gt; применяется для боковых панелей, блоков с рекламными баннерами, сносок и другой информации, которая отделена от
+                <br> основного содержимого страницы:
+              </figcaption>
+              <img src="image/aside.jpg" alt="Элемент Aside" width="692" height="155"> 
+            </figure>
+        </section>
+    </section>
+
+    <section>
+      <h2>Применение &lt;div&gt;, &lt;section&gt;, &lt;article&gt; и &lt;aside&gt;</h2>
+        <p>
+          Принимая во внимание особенности элементов, которые мы рассмотрели выше, получаем простой алгоритм для определения нужного тега
+          <br/> в каждой ситуации:
+        </p>
+          <ul>
+            <li>если контент не является семантически связанным — используется &lt;div&gt;</li>
+            <li>если контент семантически связан и относительно независим от остального содержимого страницы — используется &lt;art&gt;cle>.</li>
+            <li>если контент связан с содержимым всей страницы — используется &lt;sec&gt;ion>.</li>
+            <li>тег &lt;asi&gt;e>, как было замечено выше, используется для обособления контента, который связан по смыслу между собой, но при этом не
+            <br/> связан (слабо связан) с остальным содержимым.</li>
+          </ul>
+            <figure>
+              <figcaption>
+                Для простоты восприятия проиллюстрируем всё это графически:
+              </figcaption>
+              <img src="image/illustration.jpg" alt="illustration" width="807" height="526"> 
+            </figure>
+    </section>
+
+    <section>
+      <h2>Комбинирование элементов</h2>
+        <p>Теперь рассмотрим ключевые особенности объединения этих элементов вместе.</p>
+
+          <section>
+            <h3>&lt;article&gt; в &lt;article&gt;</h3>
+              <p>
+                Элементы &lt;article&gt; можно вкладывать друг в друга. При этом они по-прежнему остаются самодостаточными. Предполагается, однако, что
+                  <br/> содержимое внутреннего &lt;article&gt; связано с содержимым внешнего.
+              </p>
+                <figure>
+                  <figcaption>
+                    Например, если в посте блога содержится цитата из другого поста — она может быть «обёрнута» в свой &lt;article&gt;:
+                  </figcaption>
+                  <img src="image/article_article.jpg" alt="Комбинирование article" width="806" height="381"> 
+                </figure>
+          </section>
+
+          <section>
+            <h3>&lt;article&gt; в &lt;section&gt;</h3>
+              <p>
+                Подобным образом несколько тегов &lt;article&gt; можно «обернуть» в &lt;section&gt;.
+              </p>
+                <figure>
+                  <figcaption>
+                    Например, так можно поступить на странице блога, где отображаются последние сообщения. Контейнером для всех постов будет тег &lt;section&gt;, а
+                    <br> каждый такой пост обособляется тегом &lt;article&gt;:
+                  </figcaption>
+                  <img src="image/article_section.jpg" alt="article в section" width="807" height="424"> 
+                </figure>
+          </section>
+
+          <section>
+            <h3>&lt;section&gt; в &lt;article&gt;</h3>
+              <p>
+                Возможен и обратный вариант, когда каждый тег &lt;article&gt; может иметь один или даже несколько тегов &lt;section&gt;.
+              </p>
+                <figure>
+                  <figcaption>
+                    Например, эта статья, если была бы частью страницы, могла бы быть размечена так:
+                  </figcaption>
+                  <img src="image/section_article.jpg" alt="section в article" width="684" height="927"> 
+                </figure>
+          </section>
+    </section>
+
+    <p>Вот и всё! Надеемся, эта статья поможет вам безошибочно определять правильное место для каждого структурирующего тега в HTML5.</p>
+  </article>
+ 
 </body>
-  
 </html>
