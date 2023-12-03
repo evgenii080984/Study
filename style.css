@@ -1,0 +1,28 @@
+@import "index.html"
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #1B1A1B;
+    color: #ffffff;
+}
+
+h4 + p {
+    text-transform: uppercase;
+}
+
+.wrapper {
+    width: 1200px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+input:focus {
+    background-color:yellowgreen
+}
+
+a:visited {
+    color: chartreuse;
+}
+
