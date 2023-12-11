@@ -1,218 +1,28 @@
 <!DOCTYPE html>
-<html lang= "ru">
+<html lang="ru">
 
-<head> 
-  <meta charset="UTF-8">
-  <title> О нас </title>
-  <link type="image/svg+xml" rel="icon" href="image/favicon.svg">
-  <link type="image/png" rel="icon" href="image/favicon.png">
+<head>
+  <meta charset="utf-8">
+  <title>index.html</title>
   <link rel="stylesheet" href="index.css">
 </head>
-  
+
 <body>
-  <div class="wrapper">
-  <img src="image/logo.svg" alt="Логотип"
-      width="180" height="80">
-
-  <div class="block" id="one">    
-    <div>
-      <h1>Меню</h1>
-    
-      <ul>
-        <li><a href="index.html#one">Залы</a></li>
-        <li><a href="index.html#two">О нас</a></li>
-        <li><a href="http://shtilsd8.beget.tech" target="_blank">Бронь</a></li>
-        <li><a href="index.html#tree">Отзывы</a></li>
-        <li><a href="index.html#tree">Контакты</a></li>
+    <h1 class="title">Ссылки на Code Style HTML и CSS</h1>
+      <ul class="links">
+        <li>
+          <a href="https://quper.notion.site/Code-Style-HTML-6cabd2a939ad42f086410779e18a1066" target="_blank">Code Style HTML</a>
+        </li>
+        <li>
+          <a href="https://quper.notion.site/Code-Style-CSS-5021e31124f8489a9bce3a7097e99858" target="_blank">Code Style CSS</a>
+        </li>
       </ul>
-    </div>
-  
-    <div>
-      <h2>У нас есть всё для классного отдыха с друзьями</h2>
-
-      <ul>
-        <li><img src="image/vr.png" width="380" height="228" alt="VR очки"><br/>VR очки</li>
-        <li><img src="image/audio.png" width="380" height="228" alt="Аудио-система 5.1"><br/>Аудио-система 5.1 с отличным звуком</li>
-        <li><img src="image/micro.png" width="380" height="228" alt="Женщина с микрофоном"><br/>Караоке(4 микрофона)</li>
-        <li><img src="image/game.png" width="380" height="228" alt="Стол с настольной игрой"><br/>Настольные игры</li>
-        <li><img src="image/netflix.png" width="380" height="228" alt="Монитор с надписью Netflix на экране"><br/>Кино сервисы Netflix, IVI, MegoGO, КиноПоиск,Okko<br></li>
-        <li><img src="image/sony.png" width="380" height="228" alt="Монитор с игрой call of duty"><br/>PlayStation 5</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="block" id="two">
-    <h2>Наши залы</h2>
-
-      <form id="My-form"
-            action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <h4>Забронировать зал просто</h4> 
-
-          <div>
-            <p>Выберите зал</p>
-            <button type="button" name="Select a room" value="80's vibes">80's vibes</button>
-            <button type="button" name="Select a room" value="Star wars">Star wars</button>
-            <button type="button" name="Select a room" value="Wild west">Wild west</button>    
-            <button type="button" name="Select a room" value="Neon style">Neon style</button>   
-          </div>
-
-        <h3>Собери набор развлечений</h3>
-          <div>
-            <p>Приставка:</p> 
-              <label><input type="radio" value="Play station" name="Prefix" checked>Play station<br></label>
-              <label><input type="radio" value="Sega Mega Drive" name="Prefix">Sega Mega Drive<br></label>
-              <label><input type="radio" value="X-box One S" name="Prefix">X-box One S<br></label>
-              <label><input type="radio" value="Dendy" name="Prefix">Dendy<br></label> 
-          </div>
-
-          <div>
-            <p>Настольные игры</p> 
-              <label><input type="checkbox" value="Jenga" name="Table games">Jenga<br></label>
-              <label><input type="checkbox" value="Monopoly" name="Table games">Monopoly<br></label>
-              <label><input type="checkbox" value="Mankchin" name="Table games">Манкчин<br></label>
-              <label><input type="checkbox" value="Alias" name="Table games">Alias<br></label>  
-          </div>
-
-          <div>
-            <p>Дополнительно</p>
-              <label><input type="checkbox" value="Karaoke" name="Additionally">Караоке</label>
-              <label><input type="checkbox" value="VR" name="Additionally">VR</label>
-          </div>
-
-        <h3>Выбери дату и время</h3>
-
-          <div>
-            <input type="text" name="Data" size="8" list="list_data" placeholder="Дата" pattern="\d{1,2}.\d{1,2}.\d{4}" title="Заполните дату в указанном формате" required>
-              <datalist id="list_data">
-                <option value="00.00.0000"></option>
-              </datalist>
-            <input type="text" name="Time" size="8" list="list_time" placeholder="Время" pattern="\d{1,2}:\d{1,2}" title="Заполните время в указанном формате" required>
-              <datalist id="list_time">
-                <option value="00:00"></option>
-              </datalist>
-            <label>Имя
-              <input type="text" required pattern="[A-Za-zА-Яа-яЁё]+$" name="name">
-            </label>
-            <label>Телефон
-              <input type="tel" title="+7-___-___-__-__" name="phone" required pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
-            </label>
-          </div>
-
-          <br/>
-
-          <div>
-            <input type="text" name="How many men" size="20" list="How_many_men" placeholder="Сколько человек" pattern="\d{1,2}" title="Укажите количество человек" required>
-              <datalist id="How_many_men">
-                <option value="1"></option>
-              </datalist>
-            <label>Фамилия
-              <input type="text" required pattern="[A-Za-zА-Яа-яЁё]+$" name="surname">
-            </label>
-            <label>E-mail
-              <input type="email" name="E-mail" required>
-            </label>
-          </div>
-
-          <br/>
-
-          <div>
-            <button type="submit" value="Забронировать" form="My-form">Забронировать</button>
-          </div>
-      </form>  
-  </div>
-
-  <div class="block" id="three">
-    <h3>О нас </h3>
-
-    <p class="text-break"> 
-      <q>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города 
-        Каждый день мы стараемся создавать для Вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками 
-        со всего мира <b>GAME OVER</b>- это место незабываемых впечатлений
-      </q>
-      <br/>
-      <cite><i>Аркадий Абашкин, создатель игровой территории GAME OVER</i></cite>
-    </p>
-
-    <div>
-      <h4>Отзывы посетителей</h4>
-      
-      <figure>
-        <table>
-          <tr>
-            <td>
-              <img src="image/Maks.png" alt="Макс Самойлов" height="150">
-            </td>
-            <td>
-              <p>Отмечали здесь день рождения с компанией друзей, все было очень<br/>
-              круто! VR очки это просто бомба, никогда еще я не был в таком полном<br/>
-              игровом погружении/ Сервис на высоте!
-              </p>
-            </td> 
-          </tr>
-        </table>
-        <figcaption>Макс Самойлов</figcaption>
-      </figure>
-      
-      <figure>
-        <table>
-          <tr>
-            <td>
-              <img src="image/Oksana.png" alt="Оксана Григорьева" height="150">
-            </td>
-            <td>
-              <p>Были в Комнате Дикий Запад, пели в караоке под Шакиру, отличный<br/>
-              получился корпоратив! У нас в городе больше нет подобных заведений
-              </p>
-            </td> 
-          </tr>
-        </table> 
-        <figcaption>Оксана Григорьева</figcaption> 
-      </figure>
-      
-      <figure>
-        <table>
-          <tr>
-            <td>
-              <img src="image/Nikita.png" alt="Никита Ященко" height="150">
-            </td>
-            <td>
-              <p>Немного подвисала игра в VR очках, а так все норм. Крутое<br/>
-              оформление комнаты в стиле звездных войн, попал в атмосферу <br/>
-              космоса
-              </p>
-            </td> 
-          </tr>     
-        </table>
-        <figcaption>Никита Ященко</figcaption> 
-      </figure>
-    </div>
-  </div>
-  <div>
-    <ol>
-      <h4>Частые вопросы</h4>
-        <li class="everyone">Можно ли забронировать комнату онлайн?</li>
-        <li class="everyone">Могут ли мне вернуть деньги за бронь?</li>
-        <li class="everyone">Какая комната самая популярная?</li>
-        <li class="everyone">Как получить VIP карту?</li>
-        <li class="everyone">Какая комната самая популярная?</li>
-    </ol>
-    
-  </div>  
-
-  <div>
-    <h4>Контакты</h4>
-
-    <p>г. Москва ул. Аквамарина, 16 </p>
-    <a href="tel:89509302893">8(950)930-28-93</a>
-    <br/>
-    <a href="mailto:GameOver@gmail.ru">GameOver@gmail.ru</a>
-    <ul>
-      <li><a href="http://vk.com" target="_blank">Vkontakte</a></li>
-      <li><a href="http://web.telegram.org" target="_blank">Telegram</a></li>
-    </ul>
-  </div>
-  </div>
-  
 </body>
-  
+
 </html>
+
+
+
+
+
+
