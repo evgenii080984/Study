@@ -1,0 +1,76 @@
+body {
+    font-family: Lato;
+    font-style: normal;
+    width: 1920px;
+    height: 1676px;
+    color:#2D2D2D;
+}
+
+.heading {
+    width: 870px;
+    height: 65px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 130%;
+    left: 75px;
+    top: 80px;
+    right: 975px;
+    bottom: 1531px;
+    position: absolute;
+}
+
+.article {
+    width: 1770px;
+    height: 218px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    left: 75px;
+    top: 185px;
+    right: 75px;
+    bottom: 1273px;
+    position: absolute;
+    white-space: pre-line; 
+}
+
+.cite {
+    width: 162px;
+    height: 34px;
+    flex-shrink: 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    left: 1683px;
+    top: 553px;
+    right: 75px;
+    bottom: 1089px;
+    position: absolute;
+    color: #000;
+    
+}
+
+.links {
+    width: 120px;
+    height: 21px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; 
+    left: 109px;
+    top: 563px;
+    right: 1691px;
+    bottom: 1092px;
+    position: absolute;
+}
+
+.psevdo::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 75px;
+    top: 563px;
+    right: 1821px;
+    bottom: 1089px;
+    background-image: url("../ShopOnline/img/keyboard_backspace2.svg");
+    position: absolute;
+}
