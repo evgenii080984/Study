@@ -1,5 +1,23 @@
+@font-face {
+    font-family: "Droid Serif";
+    src: local("Droid Serif"), 
+    url(../ShopOnline/fonts/DroidSerif.woff2) format("woff2"),
+    url(../ShopOnline/fonts/DroidSerif.woff) format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    src: local("Droid Serif"), 
+    url(../ShopOnline/fonts/DroidSerif-Bold.woff2) format("woff2"),
+    url(../ShopOnline/fonts/DroidSerif-Bold.woff) format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
 body {
-    font-family: Lato;
+    font-family: "Droid Serif", serif;
     font-style: normal;
     width: 1920px;
     height: 1676px;
